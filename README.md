@@ -11,7 +11,7 @@ Clone this repository, and then execute:
 
 In the terminal, run:
 
-    $ rails s -p 4000
+    $ rake server:start
 
 ## Contributing
 

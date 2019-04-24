@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creator: MyString
+  date: 2019-04-24 12:16:47
+  batch_id: MyString
+
+two:
+  creator: MyString
+  date: 2019-04-24 12:16:47
+  batch_id: MyString

@@ -12,6 +12,11 @@ class BatchesController < ApplicationController
 
   def create
     batch = Batch.create(batch_params)
+    render json: BatchSerializer.new(batch).serialized_json
+  end
+
+  def destroy
+    Batch.find(params[:id]).delete
   end
 
   private

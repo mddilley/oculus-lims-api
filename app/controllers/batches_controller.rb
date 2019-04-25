@@ -11,14 +11,13 @@ class BatchesController < ApplicationController
   end
 
   def create
-    # binding.pry
     batch = Batch.create(batch_params)
   end
 
   private
 
     def batch_params
-      params.require(:batch).permit(:creator, :date)
+      params.require(:batch).permit(:creator, :date, :batch_cuid)
     end
 
 end

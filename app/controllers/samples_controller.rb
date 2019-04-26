@@ -5,4 +5,8 @@ class SamplesController < ApplicationController
     render json: SampleSerializer.new(samples).serialized_json
   end
 
+  def destroy
+    Sample.find(params[:id]).delete
+  end
+
 end

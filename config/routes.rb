@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
   resources :batches do
-      resources :samples
+      resources :samples, only: [:index, :create, :show]
   end
+
+  resources :samples, only: [:destroy]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

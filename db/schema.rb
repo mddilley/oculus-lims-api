@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2019_04_24_171902) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "batches", force: :cascade do |t|
     t.string "creator"
     t.datetime "date"
